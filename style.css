@@ -12,8 +12,9 @@ header {
   background-size: 50% 100%, cover;
   background-position: right, center;
   background-repeat: no-repeat, no-repeat;
-  /* used clip path generator */
+  /* used clip path generator  design create like -- tringle*/
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  background-attachment: fixed;
 }
 .logo {
   color: white;
@@ -38,7 +39,7 @@ header {
   font-weight: bold;
 }
 .menu a:hover {
-  color: red;
+  color:chocolate;
   transition: 0.4;
 }
 
@@ -63,6 +64,7 @@ nav {
 .text p {
   font-size: 20px;
 }
+
 .c-btn {
   color: white;
   background-color: red;
@@ -77,6 +79,7 @@ nav {
 /* about css */
 #about {
   padding: 50px 50px;
+
 }
 .section-info {
   font-weight: bold;
@@ -124,6 +127,7 @@ nav {
   background-size: cover;
   color: white;
   padding: 50px;
+  background-attachment: fixed;
 }
 #skills .section-info h1 {
   color: white;
@@ -229,4 +233,102 @@ progress {
   margin-left: 8%;
   margin-bottom: 50px;
   font-size: 40px;
+}
+
+
+
+@media only screen and (max-width:770px){
+  header{
+    background: url("img/bg1.jpeg");
+    background-size: cover;
+  }
+  #sidenav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background: rgba(0,0,0, 0.8);
+    padding: 100px 0px;
+  }
+  #sidenav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px 30px;
+    padding: 20px;
+    display: block;
+  }
+
+  #sidenav a:hover{
+    color: darkorange;
+    transition: 0.4s;
+  }
+
+  #menu-icon{
+    position: fixed;
+    top: 10px;
+    left:50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: block;
+  }
+  .logo{
+    padding-left: 50px;
+  }
+  .menu a{
+    display: none;
+  }
+  .text{
+    margin-left: 50px;
+  }
+
+  .about-left-col {
+    flex-basis: 100%;
+  }
+  .about-left-col img {
+    width: 100%;
+    padding: 50px;
+  }
+  .about-right-col {
+    flex-basis: 100%;
+    padding: 100px;
+  }
+  .skills-left-col {
+    flex-basis: 100%;
+  }
+  .skills-right-col {
+    flex-basis: 100%;
+  }
+  progress{
+    width: 80%;
+  }
+
+  .progress-div p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .contact-left-row {
+    flex-basis: 100%;
+  }
+  
+  .contact-right-row {
+    flex-basis: 100%;
+  }
+  .contact-right-row form {
+    width: auto;
+  }
+  .contact-right-row form  button{
+    width: auto;
+  }
+  .socialicon {
+    margin-left: 40%;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+  
+
 }
