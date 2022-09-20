@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("img/b1.png"), url("img/bg1.jpeg");
+  background-size: 50% 100%, cover;
+  background-position: right, center;
+  background-repeat: no-repeat, no-repeat;
+  /* used clip path generator */
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.logo {
+  color: white;
+  font-size: 50px;
+  margin-left: 100px;
+  letter-spacing: 5px;
+}
+.logo span {
+  color: red;
+}
+
+/* nav css */
+.menu {
+  margin-right: 100px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: red;
+  transition: 0.4;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* text css */
+.text {
+  color: white;
+  margin-top: 100px;
+  padding-left: 100px;
+  max-width: 550px;
+}
+.text h1 {
+  font-size: 30px;
+}
+.text p {
+  font-size: 20px;
+}
+.c-btn {
+  color: white;
+  background-color: red;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* about css */
+#about {
+  padding: 50px 50px;
+}
+.section-info {
+  font-weight: bold;
+  text-align: center;
+}
+.section-info h1 {
+  font-size: 50px;
+}
+.section-info p {
+  font-size: 20px;
+  color: #e73c3c;
+}
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-left-col {
+  flex-basis: 50%;
+}
+.about-left-col img {
+  width: 100%;
+  padding: 50px;
+}
+.about-right-col {
+  flex-basis: 50%;
+}
+.about-right-col img {
+  text-align: center;
+  align-items: center;
+}
+.about-right-col h1 {
+  font-size: 20px;
+}
+.about-right-col p {
+  text-align: justify;
+}
+
+/* skill css */
+
+#skills {
+  padding: 100px 50px;
+  background: url("img/bg2.jpg");
+  background-size: cover;
+  color: white;
+  padding: 50px;
+}
+#skills .section-info h1 {
+  color: white;
+}
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgb(45, 52, 54);
+  padding: 50px;
+}
+.skills-left-col {
+  flex-basis: 50%;
+  text-align: justify;
+}
+
+.skills-left-col p {
+  font-size: 20px;
+}
+.skills-right-col {
+  flex-basis: 50%;
+}
+
+progress {
+  width: 80%;
+}
+
+.progress-div {
+  width: 70%;
+  margin: auto;
+}
+.progress-div p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 80px;
+  text-align: justify;
+}
+
+/* contact css */
+#contact {
+  padding: 50px 50px;
+  margin-top: 100px;
+  background: linear-gradient(160deg, #e74c3c 45%, white 0%);
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-left-row {
+  flex-basis: 50%;
+}
+
+.contact-right-row {
+  flex-basis: 50%;
+}
+.contact-right-row form {
+  text-align: center;
+}
+.contact-right-row form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-right-row form input {
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 10px;
+}
+.contact-right-row form textarea {
+  width: 50%;
+  padding: 10px;
+}
+.contact-right-row form button {
+  width: 10%;
+  padding: 10px;
+  margin-right: 40%;
+}
+
+/* footer */
+#myfooter {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  height: 80px;
+  padding: 30px;
+  justify-content: space-around;
+  text-decoration: none;
+}
+#myfooter p {
+  text-decoration: none;
+  color: white;
+}
+#myfooter a {
+    text-decoration: none;
+    color: white;
+  }
+.socialicon {
+  margin-left: 8%;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
