@@ -253,6 +253,7 @@ progress {
     background: rgba(0,0,0, 0.8);
     padding: 100px 0px;
   }
+ 
   #sidenav a{
     text-decoration: none;
     color: white;
@@ -268,7 +269,7 @@ progress {
   }
 
   #menu-icon{
-    position: fixed;
+    position:fixed;
     top: 10px;
     left:50px;
     width: 50px;
@@ -276,6 +277,10 @@ progress {
     transition: 0.4s;
     display: block;
   }
+
+  /* #menu-icon{
+    display:inline;
+  } */
   .logo{
     padding-left: 50px;
   }
